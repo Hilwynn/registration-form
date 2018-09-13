@@ -5,12 +5,18 @@
   padding: 0;
 }
 
+html {
+  font-size: 62.5%;
+}
+
 body {
   background: #000;
   background-image: url(./images/blizzard-background-lg.png);
   background-repeat: no-repeat;
   background-size: cover;
+  color: #a6c9d5;
   font-family: Arial, sans-serif;
+  font-size: 1.4rem;
 }
 
 .logo {
@@ -92,6 +98,11 @@ h1 {
   width: 100%;
 }
 
+.field em {
+  color: #686b71;
+  font-size: 1.2rem;
+}
+
 .full-name .field, .birthday .field {
   padding-right: 5px;
 }
@@ -111,12 +122,16 @@ input, select {
   font-size: 15px;
   height: 34px;
   line-height: 20px;
-  padding: 0 10px;
   width: 100%;
+}
+
+input {
+  padding: 0 10px;
 }
 
 select {
   color: #595a5c;
+  padding: 0 6px;
 }
 
 input[type="radio"], input[type="checkbox"] {
