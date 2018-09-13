@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-with, initial-scale=1" />
+  <title></title>
+  <link rel="stylesheet" href="./style.css" />
+</head>
+
+<body>
+
+  <div class="wrapper">
+
+    <div class="header">
+
+    </div>
+
+    <div class="middle">
+
+      <div class="form">
+
+        <form action="http://httpbin.org/battlesignup" method="post">
+
+          <div class="field">
+              <input type="text" name="country" placeholder="Country" required />
+          </div>
+
+          <div class="field">
+              <input type="text" name="firstname" placeholder="First Name" required />
+          </div>
+
+          <div class="field">
+              <input type="text" name="lastname" placeholder="Last Name" required />
+          </div>
+
+          <div class="field">
+            <select name="birthmonth" required>
+              <option disabled selected value> Birth Month </option>
+              <option value="jan">January</option>
+              <option value="feb">February</option>
+              <option value="mar">Mars</option>
+              <option value="apr">April</option>
+              <option value="may">May</option>
+              <option value="jun">June</option>
+              <option value="jul">July</option>
+              <option value="aug">August</option>
+              <option value="sep">September</option>
+              <option value="oct">October</option>
+              <option value="nov">November</option>
+              <option value="dec">December</option>
+            </select>
+          </div>
+
+          <div class="field">
+              <input type="text" name="birthday" placeholder="Day" required />
+          </div>
+
+          <div class="field">
+              <input type="text" name="birthyear" placeholder="Year" required />
+          </div>
+
+          <div class="field">
+              <input type="email" name="email" placeholder="E-mail Address" required />
+          </div>
+
+          <div class="field">
+              <input type="password" name="password" placeholder="Password" required />
+          </div>
+
+          <div class="field">
+            <select name="secretquestion" required>
+              <option disabled selected value=""> Select a Question </option>
+              <option value="car">What was the first car you owned?</option>
+              <option value="street">What was the street you lived on in high school?</option>
+              <option value="flight">Where was the first place you flew?</option>
+              <option value="videogame">What was the first video game you beat?</option>
+              <option value="pet">What was the name of your second pet?</option>
+              <option value="sports">What is the name of your favourite sports team or player?</option>
+            </select>
+          </div>
+
+          <div class="field">
+              <input type="text" name="secretanswer" placeholder="Secret Answer" required />
+          </div>
+
+          <div class="field">
+            <label for="#news">
+              <input id="news" name="news" type="checkbox">
+                Receive news and special offers about selected third-party products and services by email.<br /><em>Carefully selected news, event information and special offers about third-party products and services.</em>
+            </label>
+          </div>
+
+          <div class="field">
+            <label for="#privaypolicy">
+              <input id="privaypolicy" name="privaypolicy" type="checkbox">
+                I have reviewed and understand the <a href="http://eu.blizzard.com/en-gb/company/about/privacy.html" target="_blank">Privacy Policy<img src="./images/icon-link.png" /></a>.<br /><em>For more information about how we use information and your rights to object, see our privacy policy.</em>
+            </label>
+          </div>
+
+        <div class="field">
+          <button type="submit">Create a free account</button>
+        </div>
+
+        <div class="field">
+          <a href="https://eu.battle.net/login/" target="_blank" class="button">Already have an account?</a>
+        </div>
+
+        </form>
+
+        <p>
+          By clicking on “Create a free account”, I agree to the <a href="http://eu.blizzard.com/en-gb/company/legal/eula.html"  target="_blank">Blizzard End User License Agreement<img src="./images/icon-link.png" /></a>, <a href="http://eu.blizzard.com/company/legal/anti-cheating.html"  target="_blank">Anti-cheating Agreement<img src="./images/icon-link.png" /></a>, and <a href="http://eu.blizzard.com/company/legal/chat-agreement.html"  target="_blank">Chat Agreement<img src="./images/icon-link.png" /></a>.
+        </p>
+
+      </div>
+
+    </div>
+
+    <div class="footer">
+
+    </div>
+
+  </div>
+
+</body>
+
+</html>
