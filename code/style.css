@@ -149,6 +149,10 @@ option[value=""][disabled] {
   color: #595a5c;
 }
 
+input:focus, select:focus {
+  border: 1px solid #0074c2;
+  outline: none;
+}
 
 /* Select element styling */
 
