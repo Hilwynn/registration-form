@@ -19,6 +19,11 @@ body {
   font-size: 1.4rem;
 }
 
+a {
+  color: #0b9fff;
+  text-decoration: none;
+}
+
 .logo {
   height: 140px;
   margin: 30px auto;
@@ -48,6 +53,21 @@ h1 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+.alt-reg {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.alt-reg a {
+  color: #fff;
+}
+
+.alt-reg-button {
+  background-color: #005c99;
+  border: 1px solid #0e86ca;
 }
 
 .button {
@@ -182,9 +202,10 @@ input:focus, select:focus {
 button {
   background-color: #0e86ca;
   border: 1px solid #10a1de;
+  color: #fff;
 }
 
-.button {
+.login-button {
   background-color: #111319;
   border: 1px solid #0d639f;
 }
