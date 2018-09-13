@@ -10,6 +10,7 @@ body {
   background-image: url(./images/blizzard-background-lg.png);
   background-repeat: no-repeat;
   background-size: cover;
+  font-family: Arial, sans-serif;
 }
 
 .logo {
@@ -91,7 +92,15 @@ h1 {
   width: 100%;
 }
 
-.login {
+.full-name .field, .birthday .field {
+  padding-right: 5px;
+}
+
+.full-name .field:last-child, .birthday .field:last-child {
+  padding-right: 0;
+}
+
+.pronouns, .login {
   padding: 10px 0;
 }
 
@@ -116,7 +125,7 @@ input[type="radio"], input[type="checkbox"] {
   width: auto;
 }
 
-label {
+label, option {
   color: #b8B8ba;
 }
 
