@@ -23,9 +23,17 @@
 
         <h1>Create an Account</h1>
 
-        <a href="#" target="_blank" class="button" id="facebook"><img src="./images/icon-facebook.png" />Facebook</a>
+        <div class="alt-reg">
 
-        <a href="#" target="_blank" class="button" id="google"><img src="./images/icon-google.png" />Google</a>
+          <div class="alt-reg-button">
+            <a href="#" target="_blank" class="button"><img src="./images/icon-facebook.png" />Facebook</a>
+          </div>
+
+          <div class="alt-reg-button">
+            <a href="#" target="_blank" class="button"><img src="./images/icon-google.png" />Google</a>
+          </div>
+
+        </div>
 
         <div class="divider">
           <span>OR</span>
@@ -37,52 +45,72 @@
               <input type="text" name="country" placeholder="Country" required />
           </div>
 
-          <div class="field">
-              <input type="text" name="firstname" placeholder="First Name" required />
+         <div class="full-name">
+
+            <div class="field">
+                <input type="text" name="firstname" placeholder="First Name" required />
+            </div>
+
+            <div class="field">
+                <input type="text" name="lastname" placeholder="Last Name" required />
+            </div>
+
           </div>
 
-          <div class="field">
-              <input type="text" name="lastname" placeholder="Last Name" required />
+          <div class="pronouns">
+
+            <div class="field">
+              <label><input type="radio" name="pronouns" value="they/their" checked required> They/them</label>
+            </div>
+            <div class="field">
+              <label><input type="radio" name="pronouns" value="she-her"> She/her</label>
+            </div>
+            <div class="field">
+              <label><input type="radio" name="pronouns" value="he-him"> He/him</label>
+            </div>
+
           </div>
 
-          <div class="field">
-            <label><input type="radio" name="pronouns" value="they/their" checked required> They/them</label>
-            <label><input type="radio" name="pronouns" value="she-her"> She/her</label>
-            <label><input type="radio" name="pronouns" value="he-him"> He/him</label>
+          <div class="birthday">
+
+            <div class="field">
+              <select name="birthmonth" required>
+                <option disabled selected value=""> Birth Month </option>
+                <option value="jan">January</option>
+                <option value="feb">February</option>
+                <option value="mar">Mars</option>
+                <option value="apr">April</option>
+                <option value="may">May</option>
+                <option value="jun">June</option>
+                <option value="jul">July</option>
+                <option value="aug">August</option>
+                <option value="sep">September</option>
+                <option value="oct">October</option>
+                <option value="nov">November</option>
+                <option value="dec">December</option>
+              </select>
+            </div>
+
+            <div class="field">
+                <input type="text" name="birthday" placeholder="Day" required />
+            </div>
+
+            <div class="field">
+                <input type="text" name="birthyear" placeholder="Year" required />
+            </div>
+
           </div>
 
-          <div class="field">
-            <select name="birthmonth" required>
-              <option disabled selected value> Birth Month </option>
-              <option value="jan">January</option>
-              <option value="feb">February</option>
-              <option value="mar">Mars</option>
-              <option value="apr">April</option>
-              <option value="may">May</option>
-              <option value="jun">June</option>
-              <option value="jul">July</option>
-              <option value="aug">August</option>
-              <option value="sep">September</option>
-              <option value="oct">October</option>
-              <option value="nov">November</option>
-              <option value="dec">December</option>
-            </select>
-          </div>
+          <div class="login">
 
-          <div class="field">
-              <input type="text" name="birthday" placeholder="Day" required />
-          </div>
+            <div class="field">
+                <input type="email" name="email" placeholder="E-mail Address" required />
+            </div>
 
-          <div class="field">
-              <input type="text" name="birthyear" placeholder="Year" required />
-          </div>
+            <div class="field">
+                <input type="password" name="password" placeholder="Password" required />
+            </div>
 
-          <div class="field">
-              <input type="email" name="email" placeholder="E-mail Address" required />
-          </div>
-
-          <div class="field">
-              <input type="password" name="password" placeholder="Password" required />
           </div>
 
           <div class="field">

@@ -20,6 +20,13 @@ body {
 
 .form {
   background-color: #23262e;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   margin: auto;
   padding: 50px 30px;
   width: 550px;
@@ -30,16 +37,14 @@ h1 {
   text-align: center;
 }
 
+.alt-reg, .full-name, .pronouns, .birthday {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 .button {
 
-}
-
-#facebook {
-  float: left;
-}
-
-#google {
-  float: right;
 }
 
 .divider {
@@ -80,12 +85,59 @@ h1 {
   width: 300px;
 }
 
+.field {
+  margin: auto;
+  padding: 5px 0;
+  width: 100%;
+}
 
+.login {
+  padding: 10px 0;
+}
 
-input {
+input, select {
   background-color: #101115;
   border: 1px solid #595a5c;
+  color: #b8B8ba;
+  font-size: 15px;
+  height: 34px;
+  line-height: 20px;
+  padding: 0 10px;
+  width: 100%;
+}
 
+select {
+  color: #595a5c;
+}
+
+input[type="radio"], input[type="checkbox"] {
+  height: auto;
+  margin-right: 5px;
+  width: auto;
+}
+
+label {
+  color: #b8B8ba;
+}
+
+option[value=""][disabled] {
+  display: none;
+}
+
+::-webkit-input-placeholder {
+  color: #595a5c;
+}
+
+:-ms-input-placeholder {
+  color: #595a5c;
+}
+
+::-ms-input-placeholder {
+  color: #595a5c;
+}
+
+::placeholder {
+  color: #595a5c;
 }
 
 
@@ -94,17 +146,10 @@ input {
 /* select:required:invalid {
   color: gray;
 } */
-option[value=""][disabled] {
-  display: none;
-}
+
 /* option {
   color: black;
 } */
-
-button,
-.button {
-
-}
 
 button {
   background-color: #0e86ca;
