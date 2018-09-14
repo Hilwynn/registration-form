@@ -39,6 +39,18 @@
           <span>OR</span>
         </div>
 
+        <div class="intro-text">
+
+          <p>
+            Start your adventures in <span class="gameTitle">World of Warcraft</span>, free to level 20, with a Blizzard Account.
+          </p>
+
+          <p>
+            Parents registering for children, <a href="https://eu.battle.net/account/creation/en/parent-signup.html?country=SWE&ret=&theme=wow" target="_blank">click here.</a>
+          </p>
+
+        </div>
+
         <form action="http://httpbin.org/anything" method="post">
 
           <div class="field">
@@ -59,15 +71,23 @@
 
           <div class="pronouns">
 
-            <div class="field">
-              <label><input type="radio" name="pronouns" value="they/their" checked required> They / them</label>
-            </div>
-            <div class="field">
-              <label><input type="radio" name="pronouns" value="she-her"> She / her</label>
-            </div>
-            <div class="field">
-              <label><input type="radio" name="pronouns" value="he-him"> He / him</label>
-            </div>
+            <label class="field">
+              They / them
+              <input type="radio" name="pronouns" value="they-their">
+                <span class="checkmark"></span>
+            </label>
+
+            <label class="field">
+              She / her
+              <input type="radio" name="pronouns" value="she-her">
+                <span class="checkmark"></span>
+            </label>
+
+            <label class="field">
+              He / him
+              <input type="radio" name="pronouns" value="he-him">
+                <span class="checkmark"></span>
+            </label>
 
           </div>
 
@@ -129,18 +149,20 @@
               <input type="text" name="secretanswer" placeholder="Secret Answer" required />
           </div>
 
-          <div class="field">
-            <label for="#news">
-              <input id="news" name="news" type="checkbox">
-                Receive news and special offers about selected third-party products and services by email.<br /><em>Carefully selected news, event information and special offers about third-party products and services.</em>
-            </label>
-          </div>
+          <div class="privacy-news">
 
-          <div class="field">
-            <label for="#privacypolicy">
-              <input id="privacypolicy" name="privacypolicy" type="checkbox">
-                I have reviewed and understand the <a href="http://eu.blizzard.com/en-gb/company/about/privacy.html" target="_blank">Privacy Policy<img src="./images/icon-link.png" /></a>.<br /><em>For more information about how we use information and your rights to object, see our privacy policy.</em>
+            <label class="field">
+              Receive news and special offers about selected third-party products and services by email.<br /><em>Carefully selected news, event information and special offers about third-party products and services.</em>
+              <input name="news" type="checkbox">
+                <span class="checkmark"></span>
             </label>
+
+            <label class="field">
+              I have reviewed and understand the <a href="http://eu.blizzard.com/en-gb/company/about/privacy.html" target="_blank">Privacy Policy<img src="./images/icon-link.png" /></a>.<br /><em>For more information about how we use information and your rights to object, see our privacy policy.</em>
+              <input name="privacy" type="checkbox" required>
+                <span class="checkmark"></span>
+            </label>
+
           </div>
 
         <div class="field">
@@ -153,15 +175,47 @@
 
         </form>
 
-        <p>
-          By clicking on “Create a free account”, I agree to the <a href="http://eu.blizzard.com/en-gb/company/legal/eula.html"  target="_blank">Blizzard End User License Agreement<img src="./images/icon-link.png" /></a>, <a href="http://eu.blizzard.com/company/legal/anti-cheating.html"  target="_blank">Anti-cheating Agreement<img src="./images/icon-link.png" /></a>, and <a href="http://eu.blizzard.com/company/legal/chat-agreement.html"  target="_blank">Chat Agreement<img src="./images/icon-link.png" /></a>.
-        </p>
+        <div class="agreement">
+
+          <p>
+            By clicking on “Create a free account”, I agree to the <a href="http://eu.blizzard.com/en-gb/company/legal/eula.html"  target="_blank">Blizzard End User License Agreement<img src="./images/icon-link.png" /></a>, <a href="http://eu.blizzard.com/company/legal/anti-cheating.html"  target="_blank">Anti-cheating Agreement<img src="./images/icon-link.png" /></a>, and <a href="http://eu.blizzard.com/company/legal/chat-agreement.html"  target="_blank">Chat Agreement<img src="./images/icon-link.png" /></a>.
+          </p>
+
+        </div>
 
       </div>
 
     </div>
 
     <div class="footer">
+
+      <div class="lang-select">
+
+      </div>
+
+      <div class="logo">
+        <img src="./images/logo-blizzard.png" />
+      </div>
+
+      <div class="nav">
+        <ul>
+          <li>Careers</li>
+          <li>About</li>
+          <li>Support</li>
+          <li>Contact us</li>
+          <li>Press</li>
+          <li>Api</li>
+        </ul>
+
+      </div>
+
+      <div class="fineprint">
+
+      </div>
+
+      <div class="terms">
+
+      </div>
 
     </div>
 

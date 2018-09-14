@@ -15,24 +15,30 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  color: #a6c9d5;
+  color: rgba(255, 255, 255, 0.8);
   font-family: Arial, sans-serif;
   font-size: 1.4rem;
 }
 
 a {
-  color: #0b9fff;
+  color: rgb(0, 174, 255);
   text-decoration: none;
+  -webkit-transition: color 0.2s ease 0s;
+  transition: color 0.2s ease 0s;
 }
 
-.logo {
+a:hover {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.header .logo {
   height: 140px;
   margin: 30px auto;
   width: 344px;
 }
 
 .form {
-  background-color: #1c202a;
+  background-color: rgba(29,34,44,.95);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -41,12 +47,14 @@ a {
       -ms-flex-direction: column;
           flex-direction: column;
   margin: auto;
-  padding: 50px 30px;
+  padding: 70px 40px;
   width: 550px;
 }
 
 h1 {
   color: #fff;
+  font-weight: 300;
+  padding-bottom: 30px;
   text-align: center;
 }
 
@@ -65,23 +73,23 @@ h1 {
 }
 
 .button {
-  background-color: #005c99;
   color: #fff;
   display: inline-block;
-  border: 1px solid #0e86ca;
   height: 34px;
-  line-height: 20px;
+  line-height: 2rem;
   padding: 7px 0;
-  width: 240px;
+  width: 230px;
 }
 
 .facebook, .google {
+  background-color: rgb(0, 92, 153);
+  border: 1px solid rgb(14, 134, 202);
   position: relative;
 }
 
 .facebook span, .google span {
   position: absolute;
-  left: 110px;
+  left: 100px;
 }
 
 .facebook span:before, .google span:before {
@@ -140,6 +148,15 @@ h1 {
   width: 300px;
 }
 
+.intro-text {
+  font-size: 1.6rem;
+  line-height: 2.5rem;
+}
+
+.intro-text p {
+  margin-bottom: 10px;
+}
+
 .field {
   margin: auto;
   padding: 5px 0;
@@ -147,7 +164,7 @@ h1 {
 }
 
 .field em {
-  color: #686b71;
+  color: rgba(255,255,255,0.4);
   font-size: 1.2rem;
 }
 
@@ -159,17 +176,17 @@ h1 {
   padding-right: 0;
 }
 
-.pronouns, .login {
+.pronouns, .login-info {
   padding: 10px 0;
 }
 
 input, select {
-  background-color: #101115;
+  background-color: rgba(0,0,0,0.5);
   border: 1px solid #595a5c;
-  color: #b8B8ba;
+  color: rgba(255,255,255,0.7);
   font-size: 15px;
   height: 34px;
-  line-height: 20px;
+  line-height: 2rem;
   width: 100%;
 }
 
@@ -182,14 +199,12 @@ select {
   padding: 0 6px;
 }
 
-input[type="radio"], input[type="checkbox"] {
-  height: auto;
-  margin-right: 5px;
-  width: auto;
+label, option {
+  color: rgba(255,255,255,0.7);
 }
 
-label, option {
-  color: #b8B8ba;
+option {
+  background-color: rgba(29,34,44,.95);
 }
 
 option[value=""][disabled] {
@@ -217,31 +232,145 @@ input:focus, select:focus {
   outline: none;
 }
 
-/* Select element styling */
+input:hover {
+  border-color: rgba(255,255,255,0.7);
+}
+
+.pronouns {
+  padding-left: 40px;
+}
+
+.pronouns .field {
+  padding-left: 25px;
+}
+
+.privacy-news {
+  margin: 15px 0 20px;
+}
+
+.privacy-news .field {
+  line-height: 2rem;
+  padding-left: 25px;
+}
+
+.privacy-news .field, .pronouns .field {
+  cursor: pointer;
+  display: block;
+  margin-bottom: 12px;
+  position: relative;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+   -ms-user-select: none;
+       user-select: none;
+}
+
+.privacy-news .field input, .pronouns .field input {
+  cursor: pointer;
+  opacity: 0;
+  position: absolute;
+}
+
+.checkmark {
+  background-color: rgba(0,0,0,0.5);
+  border: 1px solid #595a5c;
+  border-radius: 2px;
+  color: rgba(255,255,255,0.7);
+  height: 20px;
+  left: 0;
+  position: absolute;
+  top: 2px;
+  width: 20px;
+}
+
+.pronouns .checkmark {
+  border-radius: 50%;
+}
+
+.field:hover input ~ .checkmark {
+    border-color: rgba(255,255,255,0.7);
+}
+
+input:checked ~ .checkmark {
+    border-color: rgba(0, 174, 255, 0.8);
+}
+
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+input:checked ~ .checkmark:after {
+    display: block;
+}
+
+.privacy-news .checkmark:after {
+  left: 7px;
+  top: 3px;
+  width: 3px;
+  height: 7px;
+  border: solid rgba(0, 174, 255, 0.8);
+  border-width: 0 2.5px 3px 0;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.pronouns .checkmark:after {
+  background-color: rgba(0, 174, 255, 0.8);
+ 	top: 4px;
+	left: 4px;
+	width: 10px;
+	height: 10px;
+	border-radius: 50%;
+}
 
 /* select:required:invalid {
   color: gray;
 } */
 
-/* option {
-  color: black;
-} */
-
 button {
-  background-color: #0e86ca;
-  border: 1px solid #10a1de;
+  background-color: rgb(0, 174, 255);
+  border: 1px solid rgb(16, 161, 222);
   color: #fff;
+  font-size: 1.4rem;
   height: 34px;
   text-align: center;
   width: 100%;
 }
 
 .login {
-  background-color: #111319;
-  color: #0b9fff;
-  border: 1px solid #0d639f;
-  line-height: 20px;
+  background-color: rgba(0, 0, 0, 0.4);
+  color: #00aeff;
+  border: 1px solid rgb(0, 174, 255);
+  line-height: 2rem;
   padding: 7px 0;
   text-align: center;
   width: 100%;
+}
+
+.agreement {
+  font-size: 1.6rem;
+  line-height: 2.5rem;
+  padding-top: 40px;
+}
+
+.footer .logo {
+  height: 166px;
+  margin: 0 auto;
+  width: 166px;
+}
+
+.footer img {
+  width: 100%;
+}
+
+.nav {
+  text-align: center;
+}
+
+.nav li {
+  border-right: 1px solid #595a5c;
+  display: inline;
+  padding: 0 15px;
+  text-transform: uppercase;
 }
