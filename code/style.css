@@ -12,6 +12,7 @@ html {
 body {
   background: #000;
   background-image: url(./images/blizzard-background-lg.png);
+  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   color: #a6c9d5;
@@ -55,23 +56,50 @@ h1 {
   display: flex;
 }
 
-.alt-reg {
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
-.alt-reg a {
-  color: #fff;
-}
-
 .alt-reg-button {
-  background-color: #005c99;
-  border: 1px solid #0e86ca;
+  width: 50%;
+}
+
+.alt-reg-button:first-child {
+  padding-right: 5px;
 }
 
 .button {
+  background-color: #005c99;
+  color: #fff;
+  display: inline-block;
+  border: 1px solid #0e86ca;
+  height: 34px;
+  line-height: 20px;
+  padding: 7px 0;
+  width: 240px;
+}
 
+.facebook, .google {
+  position: relative;
+}
+
+.facebook span, .google span {
+  position: absolute;
+  left: 110px;
+}
+
+.facebook span:before, .google span:before {
+  display: inline-block;
+  content: "";
+  height: 24px;
+  left: -40px;
+  position: absolute;
+  top: -2px;
+  width: 24px;
+}
+
+.facebook span:before {
+  background: url(./images/icon-facebook.png) no-repeat;
+}
+
+.google span:before {
+  background: url(./images/icon-google.png) no-repeat;
 }
 
 .divider {
@@ -203,12 +231,17 @@ button {
   background-color: #0e86ca;
   border: 1px solid #10a1de;
   color: #fff;
+  height: 34px;
+  text-align: center;
+  width: 100%;
 }
 
-.login-button {
+.login {
   background-color: #111319;
+  color: #0b9fff;
   border: 1px solid #0d639f;
-}
-
-
+  line-height: 20px;
+  padding: 7px 0;
+  text-align: center;
+  width: 100%;
 }
