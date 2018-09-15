@@ -317,8 +317,8 @@ input:checked ~ .checkmark:after {
 
 .pronouns .checkmark:after {
   background-color: rgba(0, 174, 255, 0.8);
- 	top: 4px;
-	left: 4px;
+ 	top: 4.5px;
+	left: 3.5px;
 	width: 10px;
 	height: 10px;
 	border-radius: 50%;
