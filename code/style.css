@@ -18,6 +18,7 @@ body {
   color: rgba(255, 255, 255, 0.8);
   font-family: Arial, sans-serif;
   font-size: 1.4rem;
+  padding-bottom: 60px;
 }
 
 a {
@@ -354,6 +355,10 @@ button {
   padding-top: 40px;
 }
 
+.footer {
+  text-align: center;
+}
+
 .footer .logo {
   height: 166px;
   margin: 0 auto;
@@ -364,13 +369,40 @@ button {
   width: 100%;
 }
 
-.nav {
-  text-align: center;
+.footer li {
+  display: inline;
+  text-transform: uppercase;
 }
 
-.nav li {
-  border-right: 1px solid #595a5c;
-  display: inline;
-  padding: 0 15px;
+.footer li:nth-child(n+2):before {
+  background-color: rgba(255,255,255,.3);
+  content: '';
+  display: inline-block;
+  height: 10px;
+  margin: 0 15px;
+  pointer-events: none;
+  width: 1px;
+}
+
+.copyright, .trademark {
+  color: rgba(255,255,255,.3);
+  font-size: 1.3rem;
+  line-height: 2rem
+}
+
+.copyright {
+  padding-top: 20px;
   text-transform: uppercase;
+}
+
+.terms {
+  padding-top: 5px;
+}
+
+.terms li {
+  font-size: 1.2rem;
+}
+
+.terms li:nth-child(n+2):before {
+  margin: 0 10px;
 }
