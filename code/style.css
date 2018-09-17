@@ -7,6 +7,7 @@
 
 html {
   font-size: 62.5%;
+  width: 100%;
 }
 
 body {
@@ -79,7 +80,7 @@ h1 {
   height: 34px;
   line-height: 2rem;
   padding: 7px 0;
-  width: 230px;
+  width: 100%;
 }
 
 .facebook, .google {
@@ -90,7 +91,7 @@ h1 {
 
 .facebook span, .google span {
   position: absolute;
-  left: 100px;
+  left: 50%;
 }
 
 .facebook span:before, .google span:before {
@@ -113,10 +114,8 @@ h1 {
 
 .divider {
   clear: both;
-  /* display: block; */
   text-align: center;
   overflow: hidden;
-  /* white-space: nowrap; */
   margin: 20px 0;
 }
 
@@ -238,11 +237,12 @@ input:hover {
 }
 
 .pronouns {
-  padding-left: 40px;
+  padding-left: 10%;
 }
 
 .pronouns .field {
   padding-left: 25px;
+  width: 33.33%;
 }
 
 .privacy-news {
@@ -325,10 +325,6 @@ input:checked ~ .checkmark:after {
 	border-radius: 50%;
 }
 
-/* select:required:invalid {
-  color: gray;
-} */
-
 button {
   background-color: rgb(0, 174, 255);
   border: 1px solid rgb(16, 161, 222);
@@ -360,8 +356,8 @@ button {
 }
 
 .footer .logo {
-  height: 166px;
   margin: 0 auto;
+  padding-bottom: 20px;
   width: 166px;
 }
 
@@ -382,6 +378,21 @@ button {
   margin: 0 15px;
   pointer-events: none;
   width: 1px;
+}
+
+.lang-select {
+  margin-top: 15px;
+}
+
+.lang-select select {
+  border: none;
+  width: 120px;
+}
+
+.lang-select img {
+  height: 24px;
+  vertical-align: middle;
+  width: 24px;
 }
 
 .copyright, .trademark {
@@ -405,4 +416,22 @@ button {
 
 .terms li:nth-child(n+2):before {
   margin: 0 10px;
+}
+
+@media screen and (max-width: 600px) {
+  .wrapper, .header, .middle, .form {
+    width: 100%;
+  }
+  .footer {
+    margin: auto;
+    width: 80%;
+  }
+  .logo img {
+    height: auto;
+    width: 100%;
+  }
+  .pronouns {
+    font-size: 1.2rem;
+    padding-left: 5%;
+  }
 }
